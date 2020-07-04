@@ -123,8 +123,8 @@ public class Storage {
      * first time. In order to check this, see:
      * {@link #checkIfPlayerExists(UUID)} or {@link #checkIfPlayerExists(Player)}.
      *
-     * @param player
-     * @return
+     * @param player The player being added.
+     * @return Void
      */
     public CompletableFuture<Void> addPlayer(Player player) {
         return CompletableFuture.runAsync(() -> {

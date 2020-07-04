@@ -14,6 +14,7 @@ public class BetterVoteService implements VoteService {
 
     /**
      * Get a player's total number of votes.
+     *
      * @param uuid UUID of the player.
      * @return Number of votes.
      * @throws ExecutionException

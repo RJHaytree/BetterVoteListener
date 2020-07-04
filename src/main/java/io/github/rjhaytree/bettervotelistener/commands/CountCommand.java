@@ -19,7 +19,6 @@ public class CountCommand implements CommandExecutor {
         this.plugin = plugin;
     }
 
-
     @Override
     public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
         if (src.hasPermission(Permissions.ADMIN_COUNT_PERM) && args.getOne("player").isPresent()) {

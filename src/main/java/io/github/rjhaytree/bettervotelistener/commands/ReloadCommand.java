@@ -19,16 +19,7 @@ public class ReloadCommand implements CommandExecutor {
 
     @Override
     public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
-        for (String s: ConfigManager.LINKS) {
-            plugin.getLogger().info(s);
-        }
-
         ConfigManager.reload();
-
-        for (String s: ConfigManager.LINKS) {
-            plugin.getLogger().info(s);
-        }
-
         ChatUtils.sendMessage(src, Text.of("Configuration reloaded. Not all options are reloaded, however, and a restart may be necessary."));
         return CommandResult.success();
     }

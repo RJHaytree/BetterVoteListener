@@ -13,14 +13,6 @@ public class EventHandlers {
 
     @Listener
     public void reload(GameReloadEvent event) {
-        for (String s: ConfigManager.LINKS) {
-            plugin.getLogger().info(s);
-        }
-
         ConfigManager.reload();
-
-        for (String s: ConfigManager.LINKS) {
-            plugin.getLogger().info(s);
-        }
     }
 }

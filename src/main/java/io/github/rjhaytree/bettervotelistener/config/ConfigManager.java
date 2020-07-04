@@ -135,6 +135,9 @@ public class ConfigManager {
         REMIND_JOIN_MESSAGE = config.getNode("notifications", "remind-on-join-message").getString();
     }
 
+    /**
+     * Reload select configuration options.
+     */
     public static void reload() {
         try {
             variableReload();
